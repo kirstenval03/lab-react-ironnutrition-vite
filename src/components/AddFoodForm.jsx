@@ -14,19 +14,19 @@ function AddFoodForm({ addFood }) {
     <Form form={form} onFinish={handleSubmit}>
       <h2>Add Food Entry</h2>
 
-      <Form.Item label="Name" name="name" rules={[{ required: true, message: "Please enter the name of the food" }]}>
+      <Form.Item label="Name" name="name">
         <Input />
       </Form.Item>
 
-      <Form.Item label="Image" name="image" rules={[{ required: true, message: "Please enter the image URL" }]}>
+      <Form.Item label="Image" name="image" >
         <Input />
       </Form.Item>
 
-      <Form.Item label="Calories" name="calories" rules={[{ required: true, message: "Please enter the number of calories" }]}>
+      <Form.Item label="Calories" name="calories" >
         <Input type="number" />
       </Form.Item>
 
-      <Form.Item label="Servings" name="servings" rules={[{ required: true, message: "Please enter the number of servings" }]}>
+      <Form.Item label="Servings" name="servings" >
         <Input type="number" />
       </Form.Item>
 
